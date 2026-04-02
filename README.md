@@ -2,17 +2,27 @@
 
 ## 📌 Project Overview
 
-This project performs **Exploratory Data Analysis (EDA)** on a bank marketing dataset using R.
+This project focuses on **Exploratory Data Analysis (EDA)** of a real-world bank marketing dataset using R.
 
-The main objective is to analyze customer data and identify key factors that influence whether a client subscribes to a term deposit.
+The goal is to uncover patterns in customer behavior and identify key factors that influence whether a client subscribes to a term deposit.
 
 ---
 
-## 🛠 Tools & Technologies
+## 🎯 Business Objective
 
-* R
-* RStudio
-* Libraries:
+Banks run marketing campaigns to promote term deposits. This analysis helps:
+
+* Understand customer characteristics
+* Improve campaign targeting
+* Increase conversion rates
+
+---
+
+## 🛠 Tech Stack
+
+* **Language:** R
+* **Environment:** RStudio
+* **Libraries:**
 
   * Hmisc
   * dplyr
@@ -20,67 +30,63 @@ The main objective is to analyze customer data and identify key factors that inf
 
 ---
 
-## 📂 Dataset
+## 📂 Dataset Information
 
-* Bank Marketing Dataset (CSV format)
-* Includes:
+* Source: Bank Marketing Dataset
+* Format: CSV
+* Records: ~45,000+ rows
+* Features include:
 
-  * Customer demographics
-  * Campaign details
-  * Previous interactions
-  * Subscription outcomes
+  * Age, Job, Marital Status
+  * Education, Balance
+  * Contact Method
+  * Campaign Details
+  * Target Variable (Subscription: Yes/No)
 
 ---
 
-## 🔍 Key Analysis Performed
+## 🔍 Analysis Performed
 
-* Data Cleaning & Preprocessing
-* Handling Missing Values
-* Summary Statistics
-* Exploratory Data Analysis (EDA)
-* Data Visualization (Histograms, Bar Charts)
+* ✔ Data Cleaning & Formatting
+* ✔ Handling Missing Values
+* ✔ Feature Exploration
+* ✔ Distribution Analysis
+* ✔ Categorical Analysis
+* ✔ Visualization using ggplot2
 
 ---
 
 ## 📈 Key Insights
 
-* Age and job type significantly impact subscription decisions
-* Customers contacted via certain channels respond better
-* Previous campaign success strongly influences future outcomes
-* Certain months show higher conversion rates
+* 📊 Older customers are more likely to subscribe
+* 📞 Contact method plays a major role in success rate
+* 🔁 Previous successful campaigns strongly increase conversion probability
+* 📅 Certain months show higher engagement
 
 ---
 
-## 🚀 How to Run This Project
 
-```r
-# Load dataset
-data <- read.csv("bank-marketing-data.csv")
+## 📊 Sample Visualizations
 
-# Run analysis
-# Open and run the RMarkdown file
+
+---
+
+## 📁 Project Structure
+
 ```
-
----
-
-## 📸 Output
-
-(Add screenshots of graphs here after running the analysis)
+r-bank-marketing-eda/
+│
+├── bank-marketing-data.csv
+├── eda-bank-marketing.Rmd
+├── README.md
+```
 
 ---
 
 ## 👨‍💻 Author
 
 **Jumma Mohammad Teli**
-Data Analyst | Python | SQL | Power BI
-
----
-
-## ⭐ Project Highlights
-
-* Real-world dataset
-* Business-focused insights
-* Clean and structured R analysis
-* Beginner to intermediate level project
+📍 Birmingham, UK
+💼 Data Analyst | Python | SQL | Power BI | R 
 
 ---
