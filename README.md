@@ -2,19 +2,21 @@
 
 ## 📌 Project Overview
 
-This project focuses on **Exploratory Data Analysis (EDA)** of a real-world bank marketing dataset using R.
+This project performs **Exploratory Data Analysis (EDA)** on a real-world bank marketing dataset using R.
 
-The goal is to uncover patterns in customer behavior and identify key factors that influence whether a client subscribes to a term deposit.
+The objective is to analyze customer data and identify key factors that influence whether a client subscribes to a term deposit.
 
 ---
 
 ## 🎯 Business Objective
 
-Banks run marketing campaigns to promote term deposits. This analysis helps:
+Banks conduct marketing campaigns to promote financial products like term deposits.
+This analysis helps to:
 
-* Understand customer characteristics
-* Improve campaign targeting
-* Increase conversion rates
+* Understand customer behavior
+* Identify high-potential customer segments
+* Improve marketing campaign effectiveness
+* Increase subscription (conversion) rates
 
 ---
 
@@ -24,49 +26,82 @@ Banks run marketing campaigns to promote term deposits. This analysis helps:
 * **Environment:** RStudio
 * **Libraries:**
 
-  * Hmisc
   * dplyr
   * ggplot2
+  * Hmisc
 
 ---
 
 ## 📂 Dataset Information
 
-* Source: Bank Marketing Dataset
+* Dataset: Bank Marketing Dataset
 * Format: CSV
 * Records: ~45,000+ rows
 * Features include:
 
-  * Age, Job, Marital Status
-  * Education, Balance
-  * Contact Method
-  * Campaign Details
-  * Target Variable (Subscription: Yes/No)
+### 👤 Customer Information
+
+* Age
+* Job
+* Marital Status
+* Education
+
+### 💰 Financial Information
+
+* Credit Default
+* Housing Loan
+* Personal Loan
+
+### 📞 Campaign Information
+
+* Contact Type (Cellular/Telephone)
+* Month & Day of Contact
+* Campaign Contacts
+* Call Duration
+
+### 📊 Previous Campaign Data
+
+* Previous Contacts
+* Days Since Last Contact
+* Previous Outcome
+
+### 📈 Economic Indicators
+
+* Employment Variation Rate
+* Consumer Price Index
+* Consumer Confidence Index
+* Euribor Rate
+* Number of Employees
+
+### 🎯 Target Variable
+
+* `y` → Subscription (Yes/No)
 
 ---
 
 ## 🔍 Analysis Performed
 
-* ✔ Data Cleaning & Formatting
-* ✔ Handling Missing Values
-* ✔ Feature Exploration
+* ✔ Data Cleaning & Preprocessing
+* ✔ Handling Missing/Unknown Values
+* ✔ Exploratory Data Analysis (EDA)
 * ✔ Distribution Analysis
-* ✔ Categorical Analysis
-* ✔ Visualization using ggplot2
+* ✔ Categorical & Numerical Analysis
+* ✔ Data Visualization using ggplot2
 
 ---
 
 ## 📈 Key Insights
 
-* 📊 Older customers are more likely to subscribe
-* 📞 Contact method plays a major role in success rate
-* 🔁 Previous successful campaigns strongly increase conversion probability
-* 📅 Certain months show higher engagement
+* Older customers show higher subscription rates
+* Contact method significantly impacts success
+* Customers with successful previous campaigns are more likely to convert
+* Certain months have higher engagement levels
+* Target variable is highly imbalanced (majority "No")
 
 ---
 
-
 ## 📊 Sample Visualizations
+
 <img width="714" height="475" alt="image" src="https://github.com/user-attachments/assets/3d663578-ee2b-407d-8d2c-f7899cd40be4" />
 
 <img width="700" height="430" alt="image" src="https://github.com/user-attachments/assets/f0e9a638-4b1e-41b5-9c5b-84546c5f413e" />
@@ -90,19 +125,44 @@ Banks run marketing campaigns to promote term deposits. This analysis helps:
 
 <img width="709" height="468" alt="image" src="https://github.com/user-attachments/assets/2745c8e0-35be-4ad6-9145-f65860adcae6" />
 
+---
 
+## 🚀 How to Run
+
+```r id="3m0g9p"
+# Install required packages (if not installed)
+install.packages(c("dplyr", "ggplot2", "Hmisc"))
+
+# Load libraries
+library(dplyr)
+library(ggplot2)
+library(Hmisc)
+
+# Load dataset
+data <- read.csv("bank-marketing-data.csv")
+
+# Open and run the RMarkdown file
+# eda-bank-marketing.Rmd
+```
 
 ---
 
 ## 📁 Project Structure
 
-```
+```id="1a7z9x"
 r-bank-marketing-eda/
 │
 ├── bank-marketing-data.csv
 ├── eda-bank-marketing.Rmd
 ├── README.md
+└── images/
 ```
+
+---
+
+## ⚠️ Important Note
+
+* The `duration` variable is highly predictive but should not be used in real-time prediction models, as it is only known after the call is completed.
 
 ---
 
@@ -110,6 +170,29 @@ r-bank-marketing-eda/
 
 **Jumma Mohammad Teli**
 📍 Birmingham, UK
-💼 Data Analyst | Python | SQL | Power BI | R 
+💼 Data Analyst | Python | SQL | Power BI | R
 
 ---
+
+## 🌟 Project Highlights
+
+* Real-world dataset
+* Strong business-focused analysis
+* Clean and structured EDA workflow
+* Visualization-driven insights
+* Portfolio-ready project
+
+---
+
+## 🔥 Future Improvements
+
+* Build predictive models (Logistic Regression, Random Forest)
+* Handle class imbalance (SMOTE, sampling techniques)
+* Deploy dashboard using Power BI or Tableau
+* Automate reporting pipeline
+
+---
+
+
+
+
